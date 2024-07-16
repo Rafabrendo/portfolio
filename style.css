@@ -1,0 +1,47 @@
+@charset "UTF-08";
+
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* Essa propriedade vai considerar a borda como tamanho total. */
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+}
+
+body{
+    background-color: #222438;
+}
+
+header{
+    padding: 0px 2px;
+    min-width: 492px;
+    font-size: 2rem;
+    
+}
+
+.navBar1{
+    background-color: #202335;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    height: 60px;
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: rgba(250, 248, 248, 0.534);
+    font-size: 2rem;
+    display: 10px;
+}
+
+.navBar1 ol li{
+    display: inline;
+    font-size: 1.2rem;
+    
+    
+}
