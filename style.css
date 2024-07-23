@@ -18,30 +18,34 @@ body{
 
 header{
     padding: 0px 2px;
-    min-width: 492px;
-    font-size: 2rem;
+    min-width: 348px;   
     
 }
 
 .navBar1{
     background-color: #202335;
     border-bottom: 1px solid rgba(0, 0, 0, 0.212);
-    height: 60px;
-    
-    width: 100%;
+    height: 40px;
+    width: 80%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     color: rgba(250, 248, 248, 0.534);
-    font-size: 2rem;
+    gap: 16px;
     display: 10px;
 }
 
-.navBar1 ol li{
+#navBar2 ol a li {
     display: inline;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
+    background-color: rgb(61, 61, 35);
     
-    
+   
+}
+
+#navBar2{
+    position: relative;
+    left: 15px;
 }
