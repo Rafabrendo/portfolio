@@ -16,36 +16,80 @@ body{
     background-color: #222438;
 }
 
-header{
-    padding: 0px 2px;
-    min-width: 348px;   
+.header{
+    
+    width: 100%;
+    display: grid;
+    height: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: "navBar navBar"
+                         "navHeader navScrool";
+    
     
 }
 
-.navBar1{
-    background-color: #202335;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
-    height: 40px;
-    width: 80%;
+.nav{
     display: flex;
-    flex-wrap: nowrap;
+    gap: 10px;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    color: rgba(250, 248, 248, 0.534);
-    gap: 16px;
-    display: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 30px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    grid-area: navBar;
+
 }
 
-#navBar2 ol a li {
+.nav ul li{
     display: inline;
-    font-size: 0.7rem;
-    background-color: rgb(61, 61, 35);
-    
-   
+    padding: 0 20px;
+    color: white;
 }
 
-#navBar2{
-    position: relative;
-    left: 15px;
+.navHeader{
+    height: 300px;
+    grid-area: navHeader;
 }
+
+.navScrool{
+    grid-area: navScrool;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    min-width: 60px;
+
+
+}
+
+.divCircle{
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #222438;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.divCChoce{
+    background-color: aquamarine;
+}
+
+.line{
+    position: absolute;
+    width: 2px;
+    height: 180px;
+    background-color: black;
+    z-index: 0;
+}
+
+
