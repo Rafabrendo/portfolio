@@ -61,7 +61,7 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    position: relative;
+    position: sticky;
     min-width: 60px;
 
 
