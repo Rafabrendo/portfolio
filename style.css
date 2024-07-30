@@ -1,5 +1,9 @@
 @charset "UTF-08";
 
+:root{
+    --cor0: rgb(85, 173, 144);
+}
+
 *{
     padding: 0px;
     border: 0px;
@@ -14,13 +18,14 @@
 
 body{
     background-color: #222438;
+    height: 100%;
 }
 
 .header{
     
     width: 100%;
     display: grid;
-    height: 300px;
+    height: 550px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas: "navBar navBar"
@@ -41,6 +46,7 @@ body{
     height: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.205);
     grid-area: navBar;
+    
 
 }
 
@@ -72,11 +78,12 @@ body{
     color: rgba(224, 218, 209, 0.267);
 }
 
-.navHeader button{
-    background-color: rgb(85, 173, 144);
+a .button{
+    background-color: var(--cor0);
     height: 60px;
     width: 205px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -86,9 +93,12 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    position: sticky;
-    min-width: 60px;
-    max-height: 290px;
+    min-width: 40px;
+    right: 365px;
+    top: 200px;
+    gap: 70px;
+    max-height: 297px;
+    position: fixed;
 
 
 }
@@ -103,11 +113,14 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 1;
+    
+    
+    
 
 }
 
 .divCChoce{
-    background-color: rgb(85, 173, 144);
+    background-color: var(--cor0);
 }
 
 .line{
@@ -116,6 +129,24 @@ body{
     height: 180px;
     background-color: rgba(167, 149, 149, 0.479);
     z-index: 0;
+    
+}
+
+main .services{
+    height: 500px;
+    width: 500px;
+    margin: 100px;
+    padding-left: 70px;
+}
+
+.services h3{
+    color: white;
+    font-weight: 300;
+}
+
+.services h1{
+    color: var(--cor0);
+    font-size: 2rem;
 }
 
 
