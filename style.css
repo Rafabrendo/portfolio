@@ -53,7 +53,32 @@ body{
 .navHeader{
     height: 300px;
     grid-area: navHeader;
+    margin: 100px;
+    padding-left: 70px;
 }
+
+.navHeader h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    
+    
+}
+
+.navHeader p{
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    color: rgba(224, 218, 209, 0.267);
+}
+
+.navHeader button{
+    background-color: rgb(85, 173, 144);
+    height: 60px;
+    width: 205px;
+    border-radius: 10px;
+}
+
 
 .navScrool{
     grid-area: navScrool;
@@ -63,6 +88,7 @@ body{
     flex-direction: column;
     position: sticky;
     min-width: 60px;
+    max-height: 290px;
 
 
 }
@@ -81,14 +107,14 @@ body{
 }
 
 .divCChoce{
-    background-color: aquamarine;
+    background-color: rgb(85, 173, 144);
 }
 
 .line{
     position: absolute;
     width: 2px;
     height: 180px;
-    background-color: black;
+    background-color: rgba(167, 149, 149, 0.479);
     z-index: 0;
 }
 
