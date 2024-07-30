@@ -2,6 +2,7 @@
 
 :root{
     --cor0: rgb(85, 173, 144);
+    --cor1: rgba(224, 218, 209, 0.267);
 }
 
 *{
@@ -84,6 +85,9 @@ a .button{
     width: 205px;
     border-radius: 10px;
     cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 
