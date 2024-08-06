@@ -104,7 +104,6 @@ a .button{
     max-height: 297px;
     position: fixed;
 
-
 }
 
 .divCircle{
@@ -153,4 +152,22 @@ main .services{
     font-size: 2rem;
 }
 
+.services .cards{
+    margin-top: 30px;
+    display: grid;
+    
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "primeiro segundo terceiro"
+                         "quarto quinto sexto";
+    
+    gap: 30px;
+}
 
+.cards .cardsStyle{
+    padding: 30px;
+    width: 300px;
+    height: 180px;
+    
+}
